@@ -10,8 +10,7 @@
 `npm run build`
 
 **Production**  
-`npm start`  
-To stop: `ctrl + c`
+`npm start`
 
 # Deployment
 1) Optionally remove `.html` file extensions in links to hide in URL bar
@@ -31,7 +30,7 @@ is a sample Nginx config with an installation guide
 
 # Dev Deployment
 Install **Now CLI** for easy demo
-`npm install -g now`
+`npm install -g now`  
 `now`
 
 ## Adding HTML Pages
