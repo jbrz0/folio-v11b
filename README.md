@@ -13,7 +13,7 @@
 `npm start`  
 To stop: `ctrl + c`
 
-# Deployment w/ Forever
+# Deployment
 1) Optionally remove `.html` file extensions in links to hide in URL bar
 2) On your server install forever globally `[sudo] npm install forever -g`
 3) On your server, in your project directory run `forever start -c "npm start" ./`
@@ -28,6 +28,11 @@ To deploy to digital ocean there is 2 files that will help in this repo.
 is a list of commands on a fresh Linux install of a digital ocean droplet  
 - `README-nginx.md`  
 is a sample Nginx config with an installation guide
+
+# Dev Deployment
+Install **Now CLI** for easy demo
+`npm install -g now`
+`now`
 
 ## Adding HTML Pages
 1) Create html page in `/app`
