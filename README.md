@@ -29,7 +29,7 @@ is a list of commands to run on a fresh Linux install of a Digital Ocean droplet
 - `README-nginx.md`  
 is a sample Nginx config with an installation guide
 
-### Dev Deployment
+**Dev Deployment**  
 Install **Now CLI** for easy demo  
 `sudo npm install -g now`  
 `now`
