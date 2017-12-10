@@ -58,4 +58,7 @@ A sitemap is automatically generated in the project directory when the productio
   
 If you want a `robots.txt` file generated along with `sitemap.xml` file change `sitemap.XMLtoFile();` to `sitemap.toFile();` inside the `server.js` file.  
   
-If you would like to make changes to the `sitemap.xml` or `robots.txt` see config options here: https://github.com/hex7c0/express-sitemap
+If you would like to make changes to the `sitemap.xml` or `robots.txt` see additional config options [here](https://github.com/hex7c0/express-sitemap)
+
+### 404 Not Found Page
+The `404.html` file will not display in development (`yarn run dev`) because it's routed via `server.js` with Express. In order to view the changes you make to the `404.html` template, you'll need build and run in production - then navigate to a broken link.

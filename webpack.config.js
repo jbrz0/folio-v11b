@@ -15,6 +15,11 @@ const HTMLWebpackPluginConfigAbout = new HTMLWebpackPlugin({
 	filename: 'about.html',
 	inject: 'body'
 });
+const HTMLWebpackPluginConfigNotFound = new HTMLWebpackPlugin({
+	template: __dirname + '/app/404.html',
+	filename: '404.html',
+	inject: 'body'
+});
 
 const SassBundle = new ExtractTextPlugin({ 
 	filename: '[name].bundle.css',
@@ -85,7 +90,8 @@ module.exports = {
 	},
 	plugins: [
 		HTMLWebpackPluginConfig,
-		HTMLWebpackPluginConfigAbout,
+    HTMLWebpackPluginConfigAbout,
+    HTMLWebpackPluginConfigNotFound,
 		SassBundle,
 		new FaviconsWebpackPlugin(__dirname + '/app/img/favicon.png')
 	]
