@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 // HTML Pages
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
@@ -85,6 +86,7 @@ module.exports = {
 	plugins: [
 		HTMLWebpackPluginConfig,
 		HTMLWebpackPluginConfigAbout,
-		SassBundle
+		SassBundle,
+		new FaviconsWebpackPlugin(__dirname + '/app/img/favicon.png')
 	]
 };

@@ -14,7 +14,7 @@
 
 # Deployment
 1) Optionally remove `.html` file extensions in links to hide in URL bar
-2) On your server install forever globally `[sudo] npm install forever -g`
+2) On your server install forever globally `sudo npm install forever -g`
 3) On your server, in your project directory run `forever start -c "npm start" ./`
 
 **Debug deployment**  
@@ -29,8 +29,8 @@ is a list of commands on a fresh Linux install of a digital ocean droplet
 is a sample Nginx config with an installation guide
 
 # Dev Deployment
-Install **Now CLI** for easy demo
-`npm install -g now`  
+Install **Now CLI** for easy demo  
+`sudo npm install -g now`  
 `now`
 
 ## Adding HTML Pages
@@ -41,3 +41,9 @@ Install **Now CLI** for easy demo
 
 ## Adding React Components to HTML
 `index.js` is the file to `import` and `render` all ReactJS components to their `#div`s
+
+## Editing Metadata
+Metadata component is in `app/js/components/HeadInfo.js`  
+Editable information is located in `app/js/index.js`  
+  
+To add different metadata to another page duplicate `Page Header Info` section in `index.js` file - then change the id selector in both `index.js` and `HTML` page template
