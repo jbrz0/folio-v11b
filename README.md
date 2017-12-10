@@ -48,4 +48,4 @@ Editable information is located in `app/js/index.js`
   
 To add different metadata to another page duplicate `Page Header Info` section in `index.js` file - then change the id selector in both `index.js` and `HTML` page template  
   
-To add different metadata edit the tracking code under `Analytics Info` inside `index.js`
+To add analytics edit the tracking code under `Analytics Info` inside `index.js`
