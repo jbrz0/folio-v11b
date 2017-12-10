@@ -4,5 +4,8 @@ module.exports = {
         "react",
         "jsx-a11y",
         "import"
-    ]
+    ],
+  "rules": {
+    "import/newline-after-import": false,
+  }
 };

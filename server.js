@@ -1,18 +1,22 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express');
+const path = require('path');
+const sitemap = require('express-sitemap')();
+
+const app = express();
 
 app.use(express.static(path.join(__dirname, 'build'), {
-	extensions: ['html']
+  extensions: ['html'],
 }));
 
+sitemap.generate(app);
+
 // Routes
-app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname + '/build/index.html'));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/build/index.html'));
 });
 
-app.get('/about', function(req, res) {
-	res.sendFile(path.join(__dirname + '/build/about.html'));
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, '/build/about.html'));
 });
 
 app.listen(8888);
