@@ -62,3 +62,8 @@ If you would like to make changes to the `sitemap.xml` or `robots.txt` see addit
 
 ### 404 Not Found Page
 The `404.html` file will not display in development (`yarn run dev`) because it's routed via `server.js` with Express. In order to view the changes you make to the `404.html` template, you'll need build and run in production - then navigate to a broken link.
+
+### Demo Plugins
+There is a few demo plugins included located at `app/js/components/Plugin...`. If you won't be using them delete these files, and remove them from `index.js` and corresponding `#div`s in `HTML`.
+
+- **MomentJS**: For working with time & dates

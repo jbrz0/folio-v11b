@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import ReactGA from 'react-ga';
 import Header from './components/Header.js';
 import HeadInfo from './components/HeadInfo.js';
+import PluginMoment from './components/PluginMoment.js';
 
 // Analytics Info
 ReactGA.initialize('UA-000000-01');
@@ -16,3 +17,5 @@ render(<HeadInfo
 />, document.getElementById('head-info'));
 
 render(<Header />, document.getElementById('header'));
+
+render(<PluginMoment />, document.getElementById('plugin-moment'));
