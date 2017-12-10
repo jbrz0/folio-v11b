@@ -2,13 +2,15 @@ const express = require('express');
 const path = require('path');
 const sitemap = require('express-sitemap')();
 
-const app = express();
+let app = express();
 
 app.use(express.static(path.join(__dirname, 'build'), {
   extensions: ['html'],
 }));
 
+// Generate XML Sitemap
 sitemap.generate(app);
+sitemap.XMLtoFile();
 
 // Routes
 app.get('/', (req, res) => {
