@@ -15,14 +15,18 @@
   "author": "Justin Brazeau",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^2.2.0",
     "express": "^4.16.2",
     "express-sitemap": "^1.8.0",
     "moment": "^2.19.3",
     "react": "^16.2.0",
+    "react-anime": "^2.0.1",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
     "react-helmet": "^5.2.0",
-    "react-moment": "^0.6.8"
+    "react-moment": "^0.6.8",
+    "react-motion": "^0.5.2",
+    "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

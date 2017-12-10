@@ -4,6 +4,7 @@ import ReactGA from 'react-ga';
 import Header from './components/Header.js';
 import HeadInfo from './components/HeadInfo.js';
 import PluginMoment from './components/PluginMoment.js';
+import './components/PluginAnimate.js';
 
 // Analytics Info
 ReactGA.initialize('UA-000000-01');

@@ -66,4 +66,5 @@ The `404.html` file will not display in development (`yarn run dev`) because it'
 ### Demo Plugins
 There is a few demo plugins included located at `app/js/components/Plugin...`. If you won't be using them delete these files, and remove them from `index.js` and corresponding `#div`s in `HTML`.
 
-- **MomentJS**: For working with time & dates
+- [**MomentJS**](https://momentjs.com/): For working with time & dates
+- [**AnimeJS**](http://animejs.com/): For animating elements
