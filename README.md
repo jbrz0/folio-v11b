@@ -42,8 +42,10 @@ Install **Now CLI** for easy demo
 ## Adding React Components to HTML
 `index.js` is the file to `import` and `render` all ReactJS components to their `#div`s
 
-## Editing Metadata
+## Editing Metadata & Analytics
 Metadata component is in `app/js/components/HeadInfo.js`  
 Editable information is located in `app/js/index.js`  
   
-To add different metadata to another page duplicate `Page Header Info` section in `index.js` file - then change the id selector in both `index.js` and `HTML` page template
+To add different metadata to another page duplicate `Page Header Info` section in `index.js` file - then change the id selector in both `index.js` and `HTML` page template  
+  
+To add different metadata edit the tracking code under `Analytics Info` inside `index.js`

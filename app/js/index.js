@@ -1,7 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
+import ReactGA from 'react-ga';
 import Header from './components/Header.js';
 import HeadInfo from './components/HeadInfo.js';
+
+// Analytics Info
+ReactGA.initialize('UA-000000-01');
 
 // Page header info
 render(<HeadInfo
