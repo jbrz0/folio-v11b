@@ -1,16 +1,17 @@
 # Installation
 **In project directory**  
-`npm i`
+If Yarn isn't installed: `brew install yarn`
+Then: `yarn`
 
 # Usage
 **Development**  
-`npm run dev`
+`yarn run dev`
 
 **Build**  
-`npm run build`
+`yarn run build`
 
 **Production**  
-`npm start`
+`yarn start`
 
 # Deployment
 1) Optionally remove `.html` file extensions in links to hide in URL bar

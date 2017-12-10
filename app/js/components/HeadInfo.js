@@ -23,7 +23,6 @@ class HeadInfo extends React.Component {
 				<meta property="twitter:image" content={this.props.pageImage} />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta property="og:site" content={this.props.pageWebsite} />
-
 			</Helmet>
     );
   }
