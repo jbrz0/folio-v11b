@@ -1,3 +1,14 @@
+# Description
+Most react/webpack/babel setups don't have good production deployment - this repo has all the tools needed to build and deploy easily. Includes a couple plugins (gonna add more later) that can help to get started with animation, time etc.
+
+**Uses**:
+- Webpack
+- React
+- Babel
+- Express
+- Sass
+- ESLint + Sasslint
+
 # Installation
 **In project directory**  
 If Yarn isn't installed: `brew install yarn`  
