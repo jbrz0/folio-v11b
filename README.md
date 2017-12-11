@@ -83,7 +83,7 @@ There is a few demo plugins included located at `app/js/components/Plugin...`. I
 
 - [**MomentJS**](https://momentjs.com/): For working with time & dates
 - [**AnimeJS**](http://animejs.com/): For animating elements
-- [**Scroll to Component**](https://github.com/flyingant/react-scroll-to-component/): For scrolling to sections
+- [**Scroll to Component**](https://github.com/flyingant/react-scroll-to-component/): For scrolling
 
 ### Conditionally Adding React Components
 For now the solution for pages with individual components will need to be imported by first checking to see if the empty `#div` exists in `index.js`. Imported components are split into 2 sections `Sitewide` and `Conditional - specific pages`. 
