@@ -15,8 +15,9 @@ Then: `yarn`
 
 # Deployment
 1) Optionally remove `.html` file extensions in links to hide in URL bar
-2) On your server install forever globally `sudo npm install forever -g`
-3) On your server, in your project directory run `forever start -c "npm start" ./`
+2) Build website with `yarn run build`
+3) On your server install forever globally `sudo npm install forever -g`
+4) On your server, in your project directory run `forever start -c "npm start" ./`
 
 **Debug deployment**  
 To check if `forever` processes are running run `forever list`  
