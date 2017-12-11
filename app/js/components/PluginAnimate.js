@@ -1,9 +1,0 @@
-import anime from 'animejs';
-
-  let animationDemo = anime({
-    targets: '.el',
-    translateX: 250,
-    duration: 4200,
-    loop: false,
-    scale: 2,
-  });
