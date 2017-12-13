@@ -7,8 +7,8 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
-// Set to development
-process.env.NODE_ENV = 'development';
+// Set to production
+process.env.NODE_ENV = 'production';
 
 // HTML Pages
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
@@ -113,5 +113,11 @@ module.exports = {
     SassBundle,
     new DashboardPlugin(),
     new FaviconsWebpackPlugin(path.join(__dirname, '/app/img/favicon.png')),
+
+    // Build for production
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
   ],
 };
