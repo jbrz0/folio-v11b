@@ -11,18 +11,6 @@ const scrollSpy = Scroll.scrollSpy;
 const HomeBg = { backgroundImage: `url(${HomeBgLink})` };
 
 export default class Intro extends React.Component {
-  componentWillMount() { scroll.scrollToTop(); }
-  componentDidMount() { scrollSpy.update(); }
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
-
-  scrollToTop() { scroll.scrollToTop(); }
-  scrollToBottom() { scroll.scrollToBottom(); }
-  scrollTo() { scroll.scrollTo(100); }
-  scrollMore() { scroll.scrollMore(100); }
-
   render() {
     return (
       <div className="homeBg" style={HomeBg}>
