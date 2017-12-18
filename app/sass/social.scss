@@ -1,0 +1,62 @@
+@import 'common/variables';
+
+.socialWrap {
+  background: $black;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.socialGrid {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.socialCard {
+  background: $lightgrey;
+  border-top: 5px solid $red;
+  text-align: center;
+  margin: 20px;
+  overflow: auto;
+  // transition: 1s;
+  // &:hover {
+  //   box-shadow: 0px 0px 30px 10px $red;
+  //   transition: 1s;
+  // }
+  h2 {
+    color: $black;
+    margin-top: 30px;
+  }
+  i {
+    color: $red;
+    font-size: 2.6em;
+  }
+  p {
+    margin-bottom: 34px;
+  }
+}
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  // display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

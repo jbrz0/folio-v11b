@@ -1,0 +1,29 @@
+@import 'common/variables';
+
+.botWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  .bot {
+    width: 100%;
+  }
+  p {
+    color: $white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .errorBtn {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .errorLink {
+    max-width: 180px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
+  }
+}

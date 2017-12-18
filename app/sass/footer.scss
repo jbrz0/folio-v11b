@@ -1,0 +1,26 @@
+.footerWrap {
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  span {
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
+
+.footerInner {
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+  a {
+    color: $white;
+    &:hover {
+      color: $lightblue;
+    }
+  }
+}

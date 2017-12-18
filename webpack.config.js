@@ -15,15 +15,48 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   title: 'HomePage',
   template: path.join(__dirname, '/app/index.html'),
   filename: 'index.html',
-  // inject: 'body',
   inject: true,
   allChunks: true,
 });
-const HTMLWebpackPluginConfigAbout = new HTMLWebpackPlugin({
-  title: 'AboutPage',
-  template: path.join(__dirname, '/app/about.html'),
-  filename: 'about.html',
-  // inject: 'body',
+const HTMLWebpackPluginConfigChartSuite = new HTMLWebpackPlugin({
+  title: 'ChartSuite',
+  template: path.join(__dirname, '/app/chart-suite.html'),
+  filename: 'chart-suite.html',
+  inject: true,
+  allChunks: true,
+});
+const HTMLWebpackPluginConfigTerminal = new HTMLWebpackPlugin({
+  title: 'TerminalUI',
+  template: path.join(__dirname, '/app/terminal-ui.html'),
+  filename: 'terminal-ui.html',
+  inject: true,
+  allChunks: true,
+});
+const HTMLWebpackPluginConfigHomes = new HTMLWebpackPlugin({
+  title: 'HomesFromTheFuture',
+  template: path.join(__dirname, '/app/homes-from-the-future.html'),
+  filename: 'homes-from-the-future.html',
+  inject: true,
+  allChunks: true,
+});
+const HTMLWebpackPluginConfigOdd = new HTMLWebpackPlugin({
+  title: 'OddScenes',
+  template: path.join(__dirname, '/app/odd-scenes.html'),
+  filename: 'odd-scenes.html',
+  inject: true,
+  allChunks: true,
+});
+const HTMLWebpackPluginConfigWall = new HTMLWebpackPlugin({
+  title: 'WallTagged',
+  template: path.join(__dirname, '/app/wall-tagged.html'),
+  filename: 'wall-tagged.html',
+  inject: true,
+  allChunks: true,
+});
+const HTMLWebpackPluginConfigGold = new HTMLWebpackPlugin({
+  title: 'GoldTooth',
+  template: path.join(__dirname, '/app/gold-tooth.html'),
+  filename: 'gold-tooth.html',
   inject: true,
   allChunks: true,
 });
@@ -31,7 +64,6 @@ const HTMLWebpackPluginConfigNotFound = new HTMLWebpackPlugin({
   title: 'NotFoundPage',
   template: path.join(__dirname, '/app/404.html'),
   filename: '404.html',
-  // inject: 'body',
   inject: true,
   allChunks: true,
 });
@@ -107,7 +139,12 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     HTMLWebpackPluginConfig,
-    HTMLWebpackPluginConfigAbout,
+    HTMLWebpackPluginConfigChartSuite,
+    HTMLWebpackPluginConfigTerminal,
+    HTMLWebpackPluginConfigHomes,
+    HTMLWebpackPluginConfigOdd,
+    HTMLWebpackPluginConfigWall,
+    HTMLWebpackPluginConfigGold,
     HTMLWebpackPluginConfigNotFound,
     new PreloadWebpackPlugin(),
     SassBundle,

@@ -1,31 +1,57 @@
 import React from 'react';
 import { render } from 'react-dom';
 import ReactGA from 'react-ga';
-import Header from './components/Header.jsx';
 import HeadInfo from './components/HeadInfo.jsx';
-import PluginMoment from './components/PluginMoment.jsx';
-import PluginScroll from './components/PluginScroll.jsx';
-import './components/PluginAnimate.jsx';
+import Nav from './components/Nav.jsx';
+import Intro from './components/Intro.jsx';
+import IntroGrid from './components/IntroGrid.jsx';
+
+// Projects
+import ProjectOne from './components/ProjectOne.jsx';
+import ProjectTwo from './components/ProjectTwo.jsx';
+import ProjectThree from './components/ProjectThree.jsx';
+import ProjectFour from './components/ProjectFour.jsx';
+import ProjectFive from './components/ProjectFive.jsx';
+import ProjectSix from './components/ProjectSix.jsx';
 
 // Analytics Info
-ReactGA.initialize('UA-000000-01');
+ReactGA.initialize('UA-45238727-1');
 
 // Page header info
 render(<HeadInfo
-  pageTitle="React Template"
-  pageDescription="A starter app for building production ready React templates"
-  pageImage="./../../stars.png"
-  pageWebsite="http://example.com"
+  pageTitle="Design & Frontend Dev"
+  pageDescription="Design and frontend web development"
+  pageImage="./../../screenshot.png"
+  pageWebsite="http://justinbrazeau.com"
 />, document.getElementById('head-info'));
 
-// Sitewide components (every page)
-render(<Header />, document.getElementById('header'));
-
 // Conditional components
-if (document.body.contains(document.getElementById('plugin-moment'))) {
-  render(<PluginMoment />, document.getElementById('plugin-moment'));
+if (document.body.contains(document.getElementById('nav'))) {
+  render(<Nav />, document.getElementById('nav'));
+}
+if (document.body.contains(document.getElementById('intro'))) {
+  render(<Intro />, document.getElementById('intro'));
+}
+if (document.body.contains(document.getElementById('intro-grid'))) {
+  render(<IntroGrid />, document.getElementById('intro-grid'));
 }
 
-if (document.body.contains(document.getElementById('plugin-scroll'))) {
-  render(<PluginScroll />, document.getElementById('plugin-scroll'));
+// Projects
+if (document.body.contains(document.getElementById('project-one'))) {
+  render(<ProjectOne />, document.getElementById('project-one'));
+}
+if (document.body.contains(document.getElementById('project-two'))) {
+  render(<ProjectTwo />, document.getElementById('project-two'));
+}
+if (document.body.contains(document.getElementById('project-three'))) {
+  render(<ProjectThree />, document.getElementById('project-three'));
+}
+if (document.body.contains(document.getElementById('project-four'))) {
+  render(<ProjectFour />, document.getElementById('project-four'));
+}
+if (document.body.contains(document.getElementById('project-five'))) {
+  render(<ProjectFive />, document.getElementById('project-five'));
+}
+if (document.body.contains(document.getElementById('project-six'))) {
+  render(<ProjectSix />, document.getElementById('project-six'));
 }

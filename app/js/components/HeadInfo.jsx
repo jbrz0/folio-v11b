@@ -9,6 +9,10 @@ class HeadInfo extends React.Component {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
 
+        <meta name="google-site-verification" content="wVHCqj5uzKUKHdqVdAumb88mi6tWeMv8vOLD5ri5ysk" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900|Open+Sans:300" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+
         <title>{this.props.pageTitle}</title>
         <meta name="description" content={this.props.pageDescription} />
 
@@ -37,10 +41,10 @@ HeadInfo.propTypes = {
 };
 
 HeadInfo.defaultProps = {
-  pageTitle: 'React Template Demo',
-  pageDescription: 'Default meta description found in HeadInfo.js',
-  pageImage: 'Default Image_URL found in HeadInfo.js',
-  pageWebsite: 'http://oddscenes.com',
+  pageTitle: 'Justin Brazeau',
+  pageDescription: 'Design and frontend web development',
+  pageImage: './../../screenshot.png',
+  pageWebsite: 'http://justinbrazeau.com',
 };
 
 export default HeadInfo;
