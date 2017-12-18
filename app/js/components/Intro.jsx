@@ -3,10 +3,10 @@ import Prime from '../../img/prime.svg';
 import HomeBgLink from '../../img/bg.png';
 
 const Scroll = require('react-scroll');
-const Link = Scroll.Link;
-const Events = Scroll.Events;
-const scroll = Scroll.animateScroll;
-const scrollSpy = Scroll.scrollSpy;
+const { Link } = Scroll;
+// const { Events } = Scroll;
+// const { scroll } = Scroll;
+// const scrollSpy = Scroll.scrollSpy;
 
 const HomeBg = { backgroundImage: `url(${HomeBgLink})` };
 

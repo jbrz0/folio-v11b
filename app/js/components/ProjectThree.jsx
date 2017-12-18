@@ -29,11 +29,8 @@ import PaginationLogoNext from '../../img/logos/logo-projects-04.svg';
 import PaginationImgNextPath from '../../img/home/project-04.jpg';
 
 const Scroll = require('react-scroll');
-const Link = Scroll.Link;
-const Element = Scroll.Element;
-const Events = Scroll.Events;
-const scroll = Scroll.animateScroll;
-const scrollSpy = Scroll.scrollSpy;
+const { Link } = Scroll;
+const { Element } = Scroll;
 const ProjBgHeader = { backgroundImage: `url(${ProjBgHeaderPath})` };
 
 // Pagination
@@ -55,16 +52,6 @@ export default class ProjectThree extends React.Component {
       document.body.style.backgroundImage = `url(${ProjBgLink})`;
     }
   }
-  componentDidMount() { scrollSpy.update(); }
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
-  componentWillMount() { scroll.scrollToTop(); }
-  scrollToTop() { scroll.scrollToTop(); }
-  scrollToBottom() { scroll.scrollToBottom(); }
-  scrollTo() { scroll.scrollTo(100); }
-  scrollMore() { scroll.scrollMore(100); }
 
   render() {
     return (
