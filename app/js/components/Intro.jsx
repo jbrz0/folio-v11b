@@ -35,9 +35,9 @@ export default class Intro extends React.Component {
               <h1>Web Maker</h1>
               <p>I build digital products with a detailed eye for design, responsiveness, interaction & style.</p>
               <div className="processWrap">
-                <span className="fira yellow">concept</span>
+                <span className="fira yellow">concept</span><span className="intro-arrow-fix"></span>
                 <span className="fira teal">&nbsp;->&nbsp;</span>
-                <span className="fira green">design</span>
+                <span className="fira green">design</span><span className="intro-arrow-fix"></span>
                 <span className="fira teal">&nbsp;->&nbsp;</span>
                 <span className="fira red">code</span>
               </div>
