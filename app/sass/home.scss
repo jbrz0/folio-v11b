@@ -159,6 +159,9 @@
 }
 
 .intro-arrow-fix {display: none;}
+.intro-arrow-add-fix {display: none;}
+
 @media (max-width: 767px) {
   .intro-arrow-fix {display: block;}
+  .intro-arrow-add-fix {display: inline;}
 }
