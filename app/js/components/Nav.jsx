@@ -68,7 +68,6 @@ function getScrollPosition() {
 window.onscroll = getScrollPosition;
 
 export default class Nav extends React.Component {
-
   constructor() {
     super();
 

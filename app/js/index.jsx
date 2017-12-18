@@ -30,6 +30,7 @@ if (document.body.contains(document.getElementById('nav'))) {
   render(<Nav />, document.getElementById('nav'));
 }
 if (document.body.contains(document.getElementById('intro'))) {
+  window.scrollTo(0, 0);
   render(<Intro />, document.getElementById('intro'));
 }
 if (document.body.contains(document.getElementById('intro-grid'))) {
@@ -38,20 +39,26 @@ if (document.body.contains(document.getElementById('intro-grid'))) {
 
 // Projects
 if (document.body.contains(document.getElementById('project-one'))) {
+  window.scrollTo(0, 0);
   render(<ProjectOne />, document.getElementById('project-one'));
 }
 if (document.body.contains(document.getElementById('project-two'))) {
+  window.scrollTo(0, 0);
   render(<ProjectTwo />, document.getElementById('project-two'));
 }
 if (document.body.contains(document.getElementById('project-three'))) {
+  window.scrollTo(0, 0);
   render(<ProjectThree />, document.getElementById('project-three'));
 }
 if (document.body.contains(document.getElementById('project-four'))) {
+  window.scrollTo(0, 0);
   render(<ProjectFour />, document.getElementById('project-four'));
 }
 if (document.body.contains(document.getElementById('project-five'))) {
+  window.scrollTo(0, 0);
   render(<ProjectFive />, document.getElementById('project-five'));
 }
 if (document.body.contains(document.getElementById('project-six'))) {
+  window.scrollTo(0, 0);
   render(<ProjectSix />, document.getElementById('project-six'));
 }
