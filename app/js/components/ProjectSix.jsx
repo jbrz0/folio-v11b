@@ -128,7 +128,7 @@ export default class ProjectThree extends React.Component {
           <img src={Photoshop} className="techIcon" data-tip="Photoshop" data-effect="solid" alt="Photoshop" /><br />
 
           <h2 className="projHeaderTxt projHeaderTxtLast">More Projects</h2><br />
-          <a href="wall-tagged" className="paginationLinkWrap">
+          <a href="walltagged" className="paginationLinkWrap">
             <div style={PaginationImgPrev} className="projPagination">
               <img src={PaginationLogoPrev} className="projPaginationLogo terminalPagination" />
             </div>

@@ -48,8 +48,8 @@ const HTMLWebpackPluginConfigOdd = new HTMLWebpackPlugin({
 });
 const HTMLWebpackPluginConfigWall = new HTMLWebpackPlugin({
   title: 'WallTagged',
-  template: path.join(__dirname, '/app/wall-tagged.html'),
-  filename: 'wall-tagged.html',
+  template: path.join(__dirname, '/app/walltagged.html'),
+  filename: 'walltagged.html',
   inject: true,
   allChunks: true,
 });

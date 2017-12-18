@@ -140,7 +140,7 @@ export default class ProjectThree extends React.Component {
               <img src={PaginationLogoPrev} className="projPaginationLogo terminalPagination" />
             </div>
           </a>
-          <a href="wall-tagged" className="paginationLinkWrap">
+          <a href="walltagged" className="paginationLinkWrap">
           <div style={PaginationImgNext} className="projPagination">
             <img src={PaginationLogoNext} className="projPaginationLogo" />
           </div>

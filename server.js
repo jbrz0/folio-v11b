@@ -36,8 +36,8 @@ app.get('/odd-scenes', (req, res) => {
   res.sendFile(path.join(__dirname, '/build/odd-scenes.html'));
 });
 
-app.get('/wall-tagged', (req, res) => {
-  res.sendFile(path.join(__dirname, '/build/wall-tagged.html'));
+app.get('/walltagged', (req, res) => {
+  res.sendFile(path.join(__dirname, '/build/walltagged.html'));
 });
 
 app.get('/gold-tooth', (req, res) => {
