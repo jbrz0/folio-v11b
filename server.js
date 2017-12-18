@@ -48,7 +48,7 @@ app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, '/build/404.html'));
 });
 
-app.listen(8888);
+app.listen(5000);
 
 // Production server
-// viewed at http://localhost:8888
+// viewed at http://localhost:5000
