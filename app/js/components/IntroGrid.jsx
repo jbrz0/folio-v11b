@@ -30,7 +30,7 @@ export default class IntroGrid extends React.Component {
   render() {
     return (
       <div className="introGridWrap">
-        <Element name="projects" />
+        <Element name="projects"></Element>
         <a href="chart-suite">
           <div className="introGridCell" style={ProjectOne}>
             <img src={LogoOne} className="logoHome" alt="Chart Suite"/>
