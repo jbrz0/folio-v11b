@@ -25,6 +25,14 @@ yarn install
 yarn start
 ```
 
+# Usage
+We need to rum pm2 from node_modules like this:
+node_modules/pm2/bin/pm2 start server.js
+node_modules/pm2/bin/pm2 stop server.js
+
+So to run with build:
+npm run build && node_modules/pm2/bin/pm2 start server.js
+
 # Lisence
 
 This project is licensed under the MIT License - see the LICENSE file for details

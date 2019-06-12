@@ -4,7 +4,7 @@ import Lightbox from 'react-images';
 
 const photosPartFour = [
   { src: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/2468b549066719.58aa7c587985b.png', width: 3, height: 3 },
-  { src: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/e4eed549066719.58aa7a328b2a1.png', width: 4, height: 3 },
+  { src: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/e4eed549066719.58aa7a328b2a1.png', width: 4, height: 2 },
 ];
 
 class ProjectTwoLightFour extends React.Component {
