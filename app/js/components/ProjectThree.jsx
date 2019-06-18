@@ -63,9 +63,6 @@ export default class ProjectThree extends React.Component {
               <div className="projIntroTop">
                 <div className="projIntroLinksWrap">
                   <img src={ProjLogo} className="projectLogo" />
-                  <a href="http://homesfromthefuture.com" className="projIntroLinks projIntroLinkOne">
-                    <i className="ion-ios-world-outline"></i>&nbsp;&nbsp;website
-                  </a>
                   <a href="https://github.com/brz0/hftf-wp" className="projIntroLinks projIntroLinkTwo">
                     <i className="ion-social-github-outline"></i>&nbsp;&nbsp;github
                   </a>
@@ -114,10 +111,10 @@ export default class ProjectThree extends React.Component {
           <img src={Wordpress} className="techIcon" data-tip="Wordpress" data-effect="solid" alt="Wordpress" />
           <img src={Javascript} className="techIcon" data-tip="Javascript" data-effect="solid" alt="Javascript" />
           <img src={Php} className="techIcon" data-tip="PHP" data-effect="solid" alt="PHP" />
-          <img src={Html} className="techIcon" data-tip="HTML" data-effect="solid"alt="HTML" />
-          <img src={Css} className="techIcon" data-tip="CSS" data-effect="solid"alt="CSS" />
-          <img src={Litmus} className="techIcon" data-tip="Litmus" data-effect="solid"alt="Litmus" />
-          <img src={Sketch} className="techIcon" data-tip="Sketch" data-effect="solid"alt="Sketch" />
+          <img src={Html} className="techIcon" data-tip="HTML" data-effect="solid" alt="HTML" />
+          <img src={Css} className="techIcon" data-tip="CSS" data-effect="solid" alt="CSS" />
+          <img src={Litmus} className="techIcon" data-tip="Litmus" data-effect="solid" alt="Litmus" />
+          <img src={Sketch} className="techIcon" data-tip="Sketch" data-effect="solid" alt="Sketch" />
           <img src={Illustrator} className="techIcon" data-tip="Illustrator" data-effect="solid" alt="Illustrator" />
           <img src={Photoshop} className="techIcon" data-tip="Photoshop" data-effect="solid" alt="Photoshop" /><br />
 
@@ -128,9 +125,9 @@ export default class ProjectThree extends React.Component {
             </div>
           </a>
           <a href="odd-scenes" className="paginationLinkWrap">
-          <div style={PaginationImgNext} className="projPagination">
-            <img src={PaginationLogoNext} className="projPaginationLogo" />
-          </div>
+            <div style={PaginationImgNext} className="projPagination">
+              <img src={PaginationLogoNext} className="projPaginationLogo" />
+            </div>
           </a>
         </div>
       </div>
