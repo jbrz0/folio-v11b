@@ -40,7 +40,7 @@
     "react-scroll-to-component": "^1.0.2",
     "react-tooltip": "^3.4.0",
     "webpack": "^3.10.0",
-    "webpack-dashboard": "^1.0.2"
+    "webpack-dashboard": "^3.3.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
